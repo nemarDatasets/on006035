@@ -1,5 +1,5 @@
 {
-    "Name": "somatomotor-meg",
+    "Name": "somatomotor",
     "BIDSVersion": "1.7.0",
     "DatasetType": "raw",
     "Authors": [
