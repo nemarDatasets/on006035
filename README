@@ -15,11 +15,12 @@ Three anatomical fiducials were digitized for aligning the MEG with the MRI:
 
 
 
-The following triggers are included in the .fif files and are also used in the “trigger” column of the meg and bold events files:
+The following triggers are included in the .fif files and are also used in the “value” column of the meg events .tsv files:
 
 Trigger   Label               		Simplified Label
 
 32        somatosensory stimulus 	somatosensory
+
 16        Finger lift response			finger
 
 
