@@ -20,9 +20,7 @@
         "name: Massachusetts General Hospital",
         "number: 1999P010946"
     ],
-    "ReferencesAndLinks": [
-        "somatomotor-meg: doi:10.18112/openneuro.TBD"
-    ],
+    "ReferencesAndLinks": [],
     "DatasetDOI": "doi:10.18112/openneuro.TBD",
     "GeneratedBy": [
         {
