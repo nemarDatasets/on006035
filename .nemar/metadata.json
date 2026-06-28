@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "somatomotor",
+  "description": "A multi-modal neuroimaging dataset combining structural MRI, magnetoencephalography (MEG), and electroencephalography (EEG) recordings from multiple subjects during median nerve electrical stimulation and motor response tasks. Participants performed rapid left index finger lifts in response to right median nerve stimuli, providing a rich dataset for investigating somatosensory processing and motor control mechanisms.",
+  "methods_description": "Data collection involved median nerve electrical stimulation delivered at the right wrist with participants instructed to respond by lifting the left hand index finger as quickly as possible. MEG and EEG signals were recorded simultaneously with anatomical fiducials (nasion, left and right pre-auricular points) digitized for MEG-MRI co-registration. Structural T1-weighted MRI was acquired for each subject.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -14,12 +16,33 @@
     "Matti Hämäläinen": {},
     "Tommi Raij": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds006035.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "MEG"
     },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "structural MRI"
+    },
+    {
+      "term": "somatosensory evoked potentials"
+    },
+    {
+      "term": "motor response"
+    },
+    {
+      "term": "median nerve stimulation"
+    },
+    {
+      "term": "neuroimaging"
+    },
+    {
+      "term": "multimodal"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.TBD",
       "identifier_type": "DOI",
@@ -44,6 +67,11 @@
       "identifier": "10.1038/sdata.2018.110",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds006035.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -57,48 +85,21 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "MEG Dataset",
   "modalities": [
     "meg",
     "anat"
   ],
-  "resource_type_specific": "MEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "3.3 GB (21 files)"
   ],
   "formats": [
     ".fif",
     ".gz",
     ".json",
     ".md",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "A multi-modal neuroimaging dataset combining structural MRI, MEG, and EEG recordings from multiple subjects during a somatosensory-motor task. Participants received electrical stimulation of the right median nerve at the wrist and responded by lifting the left index finger as quickly as possible. This dataset enables investigation of sensorimotor integration and the neural mechanisms underlying somatosensory perception and motor response generation.",
-  "methods_description": "Data collection involved electrical stimulation of the right median nerve at the wrist with concurrent MEG and EEG recordings. Anatomical fiducials (nasion, left and right pre-auricular points) were digitized for MEG-MRI co-registration. Structural T1-weighted MRI was acquired for each subject. Task triggers (somatosensory stimulus at 32 Hz and finger lift response at 16 Hz) were recorded in MEG .fif files and corresponding events .tsv files.",
-  "keywords": [
-    {
-      "term": "MEG"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "somatosensory evoked potentials"
-    },
-    {
-      "term": "motor response"
-    },
-    {
-      "term": "median nerve stimulation"
-    },
-    {
-      "term": "sensorimotor integration"
-    },
-    {
-      "term": "structural MRI"
-    },
-    {
-      "term": "MEG-MRI co-registration"
-    }
-  ],
-  "source_hash": "ec8ae9ec115c73de8eb8f147a2fb29220c16f60d15def50d09e3145ee1108f77"
+  "source_hash": "cb7ff175774d7127ca0989e02ef0ec86d6dc4d6f022d7ec6765f6fa5342d1bf7"
 }
