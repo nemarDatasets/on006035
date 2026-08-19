@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "somatomotor",
-  "description": "A multi-modal neuroimaging dataset combining structural MRI, magnetoencephalography (MEG), and electroencephalography (EEG) recordings from multiple subjects during median nerve electrical stimulation and motor response tasks. Participants performed rapid left index finger lifts in response to right median nerve stimuli, providing a rich dataset for investigating somatosensory processing and motor control mechanisms.",
-  "methods_description": "Data collection involved median nerve electrical stimulation delivered at the right wrist with participants instructed to respond by lifting the left hand index finger as quickly as possible. MEG and EEG signals were recorded simultaneously with anatomical fiducials (nasion, left and right pre-auricular points) digitized for MEG-MRI co-registration. Structural T1-weighted MRI was acquired for each subject.",
+  "description": "This dataset comprises multi-subject, multi-modal neuroimaging recordings (structural MRI, MEG, and EEG) collected during a median nerve stimulation paradigm. Participants received electrical stimuli to the right wrist median nerve and responded by lifting their left index finger as quickly as possible. The dataset supports investigation of somatosensory and motor cortical responses using combined MEG/EEG/MRI methodology.",
+  "methods_description": "MRI (T1w), MEG, and EEG data were acquired while median nerve electrical stimuli were delivered at the right wrist, and subjects responded by lifting their left hand index finger. Three anatomical fiducials (nasion, left and right pre-auricular points) were digitized to co-register MEG with MRI. Trigger codes recorded stimulus (32) and response (16) events.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -24,7 +24,7 @@
       "term": "EEG"
     },
     {
-      "term": "structural MRI"
+      "term": "median nerve stimulation"
     },
     {
       "term": "somatosensory evoked potentials"
@@ -33,13 +33,9 @@
       "term": "motor response"
     },
     {
-      "term": "median nerve stimulation"
-    },
-    {
-      "term": "neuroimaging"
-    },
-    {
-      "term": "multimodal"
+      "term": "Magnetic Resonance Imaging",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008279"
     }
   ],
   "related_identifiers": [
@@ -61,12 +57,12 @@
     {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.1038/sdata.2018.110",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.18112/openneuro.ds006035.v1.0.0",
