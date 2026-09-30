@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "somatomotor",
-  "description": "This dataset comprises multi-subject, multi-modal neuroimaging recordings (structural MRI, MEG, and EEG) collected during a median nerve stimulation paradigm. Participants received electrical stimuli to the right wrist median nerve and responded by lifting their left index finger as quickly as possible. The dataset supports investigation of somatosensory and motor cortical responses using combined MEG/EEG/MRI methodology.",
-  "methods_description": "MRI (T1w), MEG, and EEG data were acquired while median nerve electrical stimuli were delivered at the right wrist, and subjects responded by lifting their left hand index finger. Three anatomical fiducials (nasion, left and right pre-auricular points) were digitized to co-register MEG with MRI. Trigger codes recorded stimulus (32) and response (16) events.",
+  "description": "A multi-modal neuroimaging dataset combining structural MRI (T1w), magnetoencephalography (MEG), and EEG recorded during electrical median nerve stimulation at the right wrist. Participants responded to each stimulus by lifting the left index finger as quickly as possible, allowing study of somatosensory and motor responses. Anatomical fiducials were digitized to align MEG with MRI, and event triggers mark stimuli and finger-lift responses.",
+  "methods_description": "MEG and EEG were recorded during right median nerve electrical stimulation with left index finger lift responses. Three anatomical fiducials (nasion, left and right pre-auricular points) were digitized for MEG-MRI alignment. Triggers 32 (somatosensory stimulus) and 16 (finger lift response) are stored in the .fif files and events .tsv files.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -24,18 +24,21 @@
       "term": "EEG"
     },
     {
+      "term": "MRI"
+    },
+    {
       "term": "median nerve stimulation"
     },
     {
-      "term": "somatosensory evoked potentials"
+      "term": "somatosensory"
     },
     {
       "term": "motor response"
     },
     {
-      "term": "Magnetic Resonance Imaging",
+      "term": "Median Nerve",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D008279"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008475"
     }
   ],
   "related_identifiers": [
@@ -87,7 +90,7 @@
     "anat"
   ],
   "sizes": [
-    "3.3 GB (21 files)"
+    "3.07 GB (21 files)"
   ],
   "formats": [
     ".fif",
